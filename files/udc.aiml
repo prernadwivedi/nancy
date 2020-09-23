@@ -11,18 +11,4 @@
 </random></template>
 </category>
 
-<category><pattern>Can you message <set name="rteryg">*</set> saying <set name="textmessage">*</set>?</pattern>
-<template><random>
-<li><srai>SENDTEXTMESSAGE</srai></li>
-</random></template>
-</category>
-
-<category> <pattern>SENDTEXTMESSAGE</pattern> 
-<template> 
-<oob><sms><recipient>+12132681415</recipient> 
-<message>Testing pandorabot</message></sms></oob> 
-Now sending message to Prerna. 
-</template> 
-</category>
-
 </aiml>
