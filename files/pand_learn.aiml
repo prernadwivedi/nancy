@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+
+<category>
+	<pattern>HI NANCY</pattern>
+	<template>Hi Prerna! How are you?</template>
+</category>
+
+<category>
+	<pattern>HAHA</pattern>
+	<template>:D</template>
+</category>
+
+<category>
+	<pattern>DO YOU KNOW WHAT GOOGLE IS?</pattern>
+	<template>Google is a search engine</template>
+</category>
+
+<category>
+	<pattern>JFHEKJF</pattern>
+	<template>What is your name? </template>
+</category>
+
+<category>
+	<pattern>I FEEL BAD ABOUT THE ONGOING RIOTS</pattern>
+	<template>Don't worry. Things will go back to normal.</template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOU?</pattern>
+	<template>People call me Nancy</template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOU?</pattern>
+	<template>You can call me Nancy</template>
+</category>
+
+</aiml>

@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-    
-<category><pattern>*</pattern>
-<template><srai>UDC</srai></template>
-</category>
-
-<category><pattern>UDC</pattern>
-<template><random>
-<li><srai>NAME</srai></li>
-</random></template>
-</category>
-
-<category><pattern>Can you message <set name="rteryg">*</set> saying <set name="textmessage">*</set>?</pattern>
+	<category>
+		<pattern>GET STARTED</pattern>
+		<template>Hi! My name is Nancy! I am here to help you with almost anything!
+What would you like to do today? Here are the options - Games, Shopping, Order Food, Search articles on a topic, Manage Emails and more</template>
+	</category>
+	
+	<category><pattern>Can you message * saying *?</pattern>
 <template><random>
 <li><srai>SENDTEXTMESSAGE</srai></li>
 </random></template>
@@ -24,5 +19,4 @@
 Now sending message to Prerna. 
 </template> 
 </category>
-
 </aiml>
