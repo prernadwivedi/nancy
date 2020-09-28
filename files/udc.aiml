@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    <category>
+        <pattern>* PRICE * BITCOIN #</pattern>
+        <template>
+            <think>
+                <set var="response">
+                    <callapi response_code_var="response_code">
+                    <url>http://api.coindesk.com/v1/bpi/currentprice.json</url></callapi>
+                </set>
+                <set var="content">
+                    <jsonpath>
+                        <path>$.bpi.USD.rate</path>
+                        <get var="response" />
+                    </jsonpath>
+                </set>
+            </think>
+            <condition var="response_code">
+                <li value="200"><get var="content" /></li>
+                <li>Could not get the price.</li>
+            </condition>
+        </template>
+    </category>
     
-<category><pattern>*</pattern>
-<template><srai>UDC</srai></template>
-</category>
+    <category><pattern>UDC</pattern>
+    <template><random>
+    <li><srai>GET STARTED</srai></li>
+    </random></template>
+    </category>
 
-<category><pattern>UDC</pattern>
-<template><random>
-<li><srai>NAME</srai></li>
-</random></template>
-</category>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <srai>UDC</srai>
+        </template>
+    </category>
+    
+    <category><pattern>UDC</pattern>
+    <template><random>
+    <li><srai>GET STARTED</srai></li>
+    </random></template>
+    </category>
 
 </aiml>

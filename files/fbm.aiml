@@ -1,22 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+
+<aiml version="2.0">
 	<category>
 		<pattern>GET STARTED</pattern>
 		<template>Hi! My name is Nancy! I am here to help you with almost anything!
-What would you like to do today? Here are the options - Games, Shopping, Order Food, Search articles on a topic, Manage Emails and more</template>
+What would you like to do today? Here are the options -
+            <carousel>
+                <card>
+                    <image>https://images.pexels.com/photos/965875/pexels-photo-965875.jpeg</image>
+                    <title>Games</title>
+                    <subtitle>Tictactoe/ Blackjack</subtitle>
+                    <button>
+                        <text>I would like to play Games</text>
+                        <postback>Games</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg</image>
+                    <title>Shopping</title>
+                    <subtitle>Clothes/ Shoes/ Jewelry</subtitle>
+                    <button>
+                        <text>What would you like to buy today?</text>
+                        <postback>Shopping </postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg</image>
+                    <title>AskMe</title>
+                    <subtitle>Get Answers to almost any question</subtitle>
+                    <button>
+                        <text>I have some questions</text>
+                        <postback>Ask Me</postback>
+                    </button>
+                </card>
+            </carousel>
+        </template>
 	</category>
 	
-	<category><pattern>Can you message * saying *?</pattern>
-<template><random>
-<li><srai>SENDTEXTMESSAGE</srai></li>
-</random></template>
-</category>
-
-<category> <pattern>SENDTEXTMESSAGE</pattern> 
-<template> 
-<oob><sms><recipient>+12132681415</recipient> 
-<message>Testing pandorabot</message></sms></oob> 
-Now sending message to Prerna. 
-</template> 
-</category>
+    <category>
+        <pattern>Games</pattern>
+        <template>Which game would you like to play?
+            <button>
+                <text>Tictactoe</text>
+                <postback>Tictactoe</postback>
+            </button>
+            <button>
+                <text>Knock Knock</text>
+                <postback>Knock Knock</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Ask Me</pattern>
+        <template>What would you like to ask?</template>
+    </category>
+    
+    <category>
+        <pattern>* Tictactoe *</pattern>
+        <template><srai>TICTACTOE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* Knock Knock *</pattern>
+        <template><srai>KNOCK KNOCK</srai></template>
+    </category>
 </aiml>

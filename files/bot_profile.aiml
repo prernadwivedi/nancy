@@ -394,4 +394,8 @@
 <template><srai>HOBBIES</srai></template>
 </category>
 
+<category>
+    <pattern>Hi Nancy </pattern>
+    <template>Edit bot response</template>
+</category>
 </aiml>
