@@ -21,6 +21,10 @@
 <!--  -->
 
 <!-- Name -->
+<category><pattern>What is your LAST NAME</pattern>
+<template><srai>LAST NAME</srai></template>
+</category>
+
 <category><pattern>LAST NAME</pattern>
 <template>My last name is <bot name="lastname"/>.</template>
 </category>
@@ -392,10 +396,5 @@
 </category>
 <category><pattern>FOR FUN</pattern>
 <template><srai>HOBBIES</srai></template>
-</category>
-
-<category>
-    <pattern>Hi Nancy </pattern>
-    <template>Edit bot response</template>
 </category>
 </aiml>

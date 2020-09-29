@@ -57,6 +57,11 @@ What would you like to do today? Here are the options -
     </category>
     
     <category>
+        <pattern>* question * ask</pattern>
+        <template>What would you like to ask?</template>
+    </category>
+    
+    <category>
         <pattern>* Tictactoe *</pattern>
         <template><srai>TICTACTOE</srai></template>
     </category>

@@ -94,6 +94,13 @@
 <to>December 25</to>
 </interval> days until Christmas.</template>
 </category>
+<category><pattern>* DAYS UNTIL CHRISTMAS *</pattern>
+<template><interval format="%B %d" jformat="MMMMMMMMM dd">
+<style>days</style>
+<from><date format="%B %d" jformat="MMMMMMMMM dd"/></from>
+<to>December 25</to>
+</interval> days until Christmas.</template>
+</category>
 <category><pattern>DAYS UNTIL <set>month</set> <set>number</set> <set>number</set></pattern>
 <template><interval format="%B %d %Y" jformat="MMMMMMMMM dd yyyy">
 <style>days</style>
